@@ -30,7 +30,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
 
-    let cell : KeyTableViewCell = tableView.dequeueReusableCellWithIdentifier("keyCell", forIndexPath: indexPath) as! KeyTableViewCell
+    let cell : KeyTableViewCell = tableView.dequeueReusableCellWithIdentifier("keyCell") as! KeyTableViewCell
 
     cell.keyLabel.text = "🔑"
 
@@ -41,6 +41,19 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 20
   }
+
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    print("selected key \(indexPath.row)")
+
+    let alertView = UIAlertController(title: "Selected key \(indexPath.row)", message: "They don't want you to select it.", preferredStyle: .Alert)
+
+
+    alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+    presentViewController(alertView, animated: true, completion: nil)
+  }
+
+
+
 
   @IBAction func tappedClose(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
