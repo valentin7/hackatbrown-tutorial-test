@@ -17,14 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Major Key app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lce-rw-DoI">
-                                <rect key="frame" x="236" y="20" width="130" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major Key app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lce-rw-DoI">
+                                <rect key="frame" x="235" y="20" width="130" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EkE-yo-fzf"/>
+                                    <constraint firstAttribute="width" constant="130" id="SZh-Xv-1Ls"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isf-Bw-exK">
-                                <rect key="frame" x="200" y="96" width="202" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isf-Bw-exK">
+                                <rect key="frame" x="199" y="96" width="202" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="k2s-PA-kiL"/>
+                                    <constraint firstAttribute="width" constant="202" id="y2Q-0h-gaG"/>
+                                </constraints>
                                 <state key="normal" title="Show me the keys to success"/>
                                 <connections>
                                     <segue destination="k2O-5e-fM4" kind="show" id="Sll-jV-hYr"/>
@@ -32,6 +40,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lce-rw-DoI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CW-vY-ueT"/>
+                            <constraint firstItem="Lce-rw-DoI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0cf-ER-vlb"/>
+                            <constraint firstItem="isf-Bw-exK" firstAttribute="top" secondItem="Lce-rw-DoI" secondAttribute="bottom" constant="36" id="8GN-T2-U0Y"/>
+                            <constraint firstItem="isf-Bw-exK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9KQ-wX-ESO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
