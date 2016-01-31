@@ -80,11 +80,49 @@
                                     <action selector="tappedClose:" destination="k2O-5e-fM4" eventType="touchUpInside" id="wLh-KT-5Of"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I8W-YC-rzr">
+                                <rect key="frame" x="0.0" y="67" width="600" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="neg-5R-NAb" customClass="KeyTableViewCell" customModule="hackatbrown_tutorial_test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="neg-5R-NAb" id="44B-Go-Hoe">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="101.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV2-EN-PAD">
+                                                    <rect key="frame" x="286.5" y="40" width="27" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="27" id="64H-ry-9Un"/>
+                                                        <constraint firstAttribute="height" constant="21" id="lTH-6a-hu3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XV2-EN-PAD" firstAttribute="top" secondItem="44B-Go-Hoe" secondAttribute="top" constant="40" id="1Ac-b3-TvG"/>
+                                                <constraint firstItem="XV2-EN-PAD" firstAttribute="centerX" secondItem="44B-Go-Hoe" secondAttribute="centerX" id="FML-f7-XX8"/>
+                                                <constraint firstAttribute="bottom" secondItem="XV2-EN-PAD" secondAttribute="bottom" constant="40.5" id="dzT-6A-Plo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="keyLabel" destination="XV2-EN-PAD" id="KhE-Z4-HgV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.79607843140000001" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bOA-I4-Vj9" firstAttribute="top" secondItem="I8W-YC-rzr" secondAttribute="bottom" id="ZZW-WU-QiR"/>
+                            <constraint firstItem="I8W-YC-rzr" firstAttribute="top" secondItem="cuA-De-EdZ" secondAttribute="bottom" constant="17" id="apc-Gj-8se"/>
                             <constraint firstItem="cuA-De-EdZ" firstAttribute="leading" secondItem="94o-MR-EFX" secondAttribute="leading" constant="24" id="bA4-Qp-RzF"/>
+                            <constraint firstItem="I8W-YC-rzr" firstAttribute="leading" secondItem="94o-MR-EFX" secondAttribute="leading" id="cvD-Py-gyd"/>
                             <constraint firstItem="cuA-De-EdZ" firstAttribute="top" secondItem="LlA-l5-WN3" secondAttribute="bottom" id="hku-KO-OkU"/>
+                            <constraint firstAttribute="trailing" secondItem="I8W-YC-rzr" secondAttribute="trailing" id="xCg-sH-sFP"/>
                         </constraints>
                     </view>
                 </viewController>
