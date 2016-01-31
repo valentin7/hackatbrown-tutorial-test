@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,22 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+
+    let cell : KeyTableViewCell = tableView.dequeueReusableCellWithIdentifier("keyCell", forIndexPath: indexPath) as! KeyTableViewCell
+
+    cell.keyLabel.text = "🔑"
+
+    return cell
+
+  }
+
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 20
+  }
+
   @IBAction func tappedClose(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
