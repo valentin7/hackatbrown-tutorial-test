@@ -10,10 +10,15 @@ import UIKit
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+  @IBOutlet var keyTableView: UITableView!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
       print("new detail")
+      self.keyTableView.delegate = self
+      self.keyTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 

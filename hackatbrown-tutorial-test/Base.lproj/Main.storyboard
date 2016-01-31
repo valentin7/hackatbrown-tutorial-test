@@ -125,6 +125,9 @@
                             <constraint firstAttribute="trailing" secondItem="I8W-YC-rzr" secondAttribute="trailing" id="xCg-sH-sFP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="keyTableView" destination="I8W-YC-rzr" id="4gz-5q-0T7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLs-hc-EXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
