@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet var MajorLabel: UILabel!
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("Hellow")
+    print("Hellow 🔑")
+    MajorLabel.text = "Major 🔑 app"
+
     // Do any additional setup after loading the view, typically from a nib.
   }
 
