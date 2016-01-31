@@ -14,6 +14,7 @@
 		A7AFFC711C5E781300EAD65D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AFFC6F1C5E781300EAD65D /* LaunchScreen.storyboard */; };
 		A7AFFC7C1C5E781300EAD65D /* hackatbrown_tutorial_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFFC7B1C5E781300EAD65D /* hackatbrown_tutorial_testTests.swift */; };
 		A7AFFC871C5E781300EAD65D /* hackatbrown_tutorial_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFFC861C5E781300EAD65D /* hackatbrown_tutorial_testUITests.swift */; };
+		A7AFFC971C5E7CCF00EAD65D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFFC961C5E7CCF00EAD65D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A7AFFC821C5E781300EAD65D /* hackatbrown-tutorial-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackatbrown-tutorial-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFFC861C5E781300EAD65D /* hackatbrown_tutorial_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackatbrown_tutorial_testUITests.swift; sourceTree = "<group>"; };
 		A7AFFC881C5E781300EAD65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AFFC961C5E7CCF00EAD65D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A7AFFC661C5E781300EAD65D /* AppDelegate.swift */,
 				A7AFFC681C5E781300EAD65D /* ViewController.swift */,
+				A7AFFC961C5E7CCF00EAD65D /* DetailViewController.swift */,
 				A7AFFC6A1C5E781300EAD65D /* Main.storyboard */,
 				A7AFFC6D1C5E781300EAD65D /* Assets.xcassets */,
 				A7AFFC6F1C5E781300EAD65D /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AFFC971C5E7CCF00EAD65D /* DetailViewController.swift in Sources */,
 				A7AFFC691C5E781300EAD65D /* ViewController.swift in Sources */,
 				A7AFFC671C5E781300EAD65D /* AppDelegate.swift in Sources */,
 			);
